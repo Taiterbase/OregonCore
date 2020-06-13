@@ -722,7 +722,7 @@ DROP TABLE IF EXISTS `game_event_save`;
 CREATE TABLE `game_event_save` (
   `event_id` mediumint(8) unsigned NOT NULL,
   `state` tinyint(3) unsigned NOT NULL DEFAULT '1',
-  `next_start` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `next_start` timestamp NOT NULL DEFAULT '1970-01-01 00:00:01',
   PRIMARY KEY (`event_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
